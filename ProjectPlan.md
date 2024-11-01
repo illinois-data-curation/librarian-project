@@ -22,14 +22,13 @@ I may also compare librarian salaries to other faculty and staff. <br>
 I'm also thinking about mapping academic libraries to a US map and using color coding to represent either salary levels or the salary-to-living-cost ratio. <br>
 
 2. **Bureau of Labor Statistics** <br>
-**Occupational Employment and Wage Statistics (OWES) Tables** <br>
-https://www.bls.gov/oes/tables.htm <br>
+**Occupational Employment and Wage Statistics (OWES) Tables**: https://www.bls.gov/oes/tables.htm <br>
 API option: https://www.bls.gov/developers/ <br>
 API Python example: https://www.bls.gov/developers/api_python.htm#python2 <br>
 
 3. **Bureau of Economic Analysis** <br>
 **Regional price parities (RPPs)** <br>
-https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area
+https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area <br>
 RPRs offers Personal consumption expenditures by state by major type of product <br>
 https://apps.bea.gov/itable/?ReqID=70&step=1&_gl=1*w7g723*_ga*Mjc2MjE5MzMuMTczMDQxNDQ4Ng..*_ga_J4698JNNFT*MTczMDQxNzY5OS4yLjAuMTczMDQxNzY5OS42MC4wLjA.#eyJhcHBpZCI6NzAsInN0ZXBzIjpbMSwyOSwyNSwzMSwyNl0sImRhdGEiOltbIlRhYmxlSWQiLCI1MjQiXSxbIk1ham9yX0FyZWEiLCIwIl0sWyJTdGF0ZSIsWyIwIl1dXX0= <br>
 API register: https://apps.bea.gov/API/signup/ <br>
