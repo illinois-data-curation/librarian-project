@@ -11,7 +11,8 @@ I’m interested in exploring the following questions but may not be able to ans
 - Which states provide the best salary-to-living-cost ratio for librarians?
 
 # Team
-This is a one-person team. Wanheng will be responsible for data acquisition, integration, profiling, quality assessment, cleaning, analysis and visualization, workflow automation, reproducible packaging, citation, metadata creation, archiving, and obtaining persistent identifier.
+This is a one-person team. 
+Wanheng will be responsible for data acquisition, integration, profiling, quality assessment, cleaning, analysis and visualization, workflow automation, reproducible packaging, citation, metadata creation, archiving, and obtaining persistent identifier.
 
 # Datasets
 1. **Integrated Postsecondary Education Data System (IPEDS)** <br>
@@ -36,8 +37,8 @@ API user guide: https://apps.bea.gov/api/_pdf/bea_web_service_api_user_guide.pdf
 
 # Timeline
 - Data acquision: by **Nov 8**
-- Data integration, profiling, quality assessment, cleaning: by **Nov 15** [<u>status report</u>]
+- Data integration, profiling, quality assessment, cleaning: by **Nov 15** [*status report*]
 - Data analysis and visualization: by **Nov 29**
 - Reproducible packaging, workflow automation: by **Dec 6**
-- Citation, metadata creation, archiving, and obtaining persistent identifier: by **Dec 11** [<u>final project submission</u>]
+- Citation, metadata creation, archiving, and obtaining persistent identifier: by **Dec 11** [*final project submission*]
 - Final project essay: by **Dec 19**
