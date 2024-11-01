@@ -11,7 +11,7 @@ I’m interested in exploring the following questions but may not be able to ans
 - Which states provide the best salary-to-living-cost ratio for librarians?
 
 # Team
-This is a one-person team. 
+This is a one-person team. <br>
 Wanheng will be responsible for data acquisition, integration, profiling, quality assessment, cleaning, analysis and visualization, workflow automation, reproducible packaging, citation, metadata creation, archiving, and obtaining persistent identifier.
 
 # Datasets
