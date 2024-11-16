@@ -10,7 +10,7 @@
 - [ ] Data integration, profiling, quality assessment, cleaning: by **Nov 29** [*status report*]
 - [ ] Data analysis and visualization: by **Dec 5**
 - [ ] Reproducible packaging, workflow automation: by **Dec 9**
-- [ ]Citation, metadata creation, archiving, and obtaining persistent identifier: by **Dec 11** [*final project submission*]
+- [ ] Citation, metadata creation, archiving, and obtaining persistent identifier: by **Dec 11** [*final project submission*]
 - [ ] Final project essay: by **Dec 19**
 
 # Plan Change
