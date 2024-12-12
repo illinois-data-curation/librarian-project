@@ -46,7 +46,7 @@ Sequence of steps required for someone else to reproduce your results.
 Both datasets are not accessible through API and cannot be easily downloaded via wget. Here I desbribe the steps to download the files.
 - IPEDs
 1. Go to URL: https://nces.ed.gov/ipeds/datacenter/SelectVariables.aspx?stepId=1&sid=1f7ec561-a803-4ea6-8163-3761c55f451f&rtid=1
-![IPEDS Data Tool]](screenshots/IPEDS1.png)
+![IPEDS Data Tool](screenshots/IPEDS1.png)
 2. Go to Snakefile code 
 
 # References
