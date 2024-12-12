@@ -55,9 +55,9 @@ Both datasets are not accessible through API and cannot be easily downloaded via
     ![IPEDS Data Tool](screenshots/IPEDS4.png)
     3. Under Academic Libraries -- Academic Libraries: Fiscal year 2022 -- Number of full-time equivalent (FTEs) library staff, Select All, as shown in the screenshot.
     ![IPEDS Data Tool](screenshots/IPEDS5.png)
-5. Continue to Output and download Academic Libraries/Academic Libraries: Fiscal year 2022 as csv. Change the file name to “AcademicLibrary.csv”
+5. Continue to Output and download as a single file as csv. Change the file name to “AcademicLibrary.csv”
     ![IPEDS Data Tool](screenshots/IPEDS6.png) 
-6. *NOTE*: The data tool might change how it organizes its output data. You might not be able to download the exact same data. For reproductibility, a copy of data used in this project is uploaded to Box. 
+6. *NOTE*: The data tool is hard to navigate and might change how it organizes its output data. For reproductibility, a copy of data used in this project is uploaded to Box. 
 
 ### PCE Data Acquisition
 1. Go to URL: https://apps.bea.gov/itable/?ReqID=70&step=1&_gl=1*w7g723*_ga*Mjc2MjE5MzMuMTczMDQxNDQ4Ng..*_ga_J4698JNNFT*MTczMDQxNzY5OS4yLjAuMTczMDQxNzY5OS42MC4wLjA.#eyJhcHBpZCI6NzAsInN0ZXBzIjpbMSwyOSwyNSwzMSwyNl0sImRhdGEiOltbIlRhYmxlSWQiLCI1MjQiXSxbIk1ham9yX0FyZWEiLCIwIl0sWyJTdGF0ZSIsWyIwIl1dXX0=
