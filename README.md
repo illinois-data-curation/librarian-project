@@ -22,14 +22,14 @@ Two visualizations are created:
 - The second visualization is a scatter plot comparing average library staff salaries to each state’s living costs. Hovering over the data points reveals the state names. This plot helps users quickly identify states offering higher average salaries combined with lower living expenses.
 
 # Data profile 
-- `AcademicLibrary.csv` contains institutional information (including UnitID, name, address) and academic libraries information (including staffing and expenditures). The variables used in this project are university name, state, number of librarians and library staff, salary expenditure. IPEDS data is is generally available for public use without any specific license restrictions.
+- `AcademicLibrary.csv` contains institutional information (including UnitID, name, address) and academic libraries information (including staffing and expenditures). The orginal dataset has 5594 institutions, but for the sake of current analysis, only 753 institutions which have an above-average number of library staff, were selected. The variables used in this project are university name, state, number of librarians and library staff, salary expenditure. IPEDS data is is generally available for public use without any specific license restrictions.
 - `table.xlsx` summarizes personal consumption expenditures in the United States for 2023, with key columns including: GeoFips, a geographic identifier; GeoName, the corresponding region name; LineCode, numerical codes representing expenditure categories; Description, textual descriptions of categories; and 2023, expenditure values in millions of dollars. Data from BEA is also generally available for public use without any specific license restrictions.
 - `us-state-names.tsv` is downloable from https://raw.githubusercontent.com/GovLab/opencorporatesd3/refs/heads/master/us-state-names.tsv. This dataset likely falls within the public domain, as it contains only U.S. state names and their corresponding codes, which are factual and not copyrightable.
 
 # Findings
 - Although California, Texas, Florida, and New York offer a large number of library staff positions, their high cost of living compared to salaries may reduce their overall appeal.
 - Delaware presents an excellent cost-of-living-to-salary ratio, but currently offers relatively few library positions.
-- Users can utilize these visualizations to explore states of interest and determine the best balance between available library positions, cost of living, and salary levels that align with their personal requirements.
+- Users can utilize the two visualizations to explore states of interest and determine the best balance between available library positions, cost of living, and salary levels that align with their personal requirements.
 
 # Future work
 The initial analysis estimated average librarian salaries by dividing the total salary budget by the total number of library staff. However, universities have librarians and other full-time library staff, and it is likely that they have different salary levels. To obtain a more accurate estimate of average librarian salaries, future research could explore alternative data sources,

@@ -20,17 +20,16 @@ PCE.to_csv('data/interim_data/PCE_clean.csv', index=False)
 
 # IPEDs data
 ipeds = pd.read_csv("data/AcademicLibrary.csv")
-# Simply column names
-ipeds.columns = ipeds.columns.str.replace(" (AL2022)", "")
-ipeds.columns = ipeds.columns.str.replace(" (HD2022)", "")
+# Simplify column names
+ipeds.columns = ipeds.columns.str.replace("HD2022.", "")
+ipeds.columns = ipeds.columns.str.replace("AL2022_RV.", "")
+ipeds.drop('institution name.1', axis=1, inplace=True)
 
-# Drop non US states
-ipeds = ipeds[~ipeds['State abbreviation'].isin(['FM','GU','MH','MP','PR','VI','DC','PW'])]
 # Select only interested columns to make the dataframe smaller
-ipeds = ipeds[['UnitID','ZIP code','Institution Name',
-                  'State abbreviation','Librarians FTE staff',
-                  'Total library FTE staff',
-                  'Total salaries and wages from the library budget']].copy()
+ipeds = ipeds[['unitid','institution name', 'ZIP code',
+               'State abbreviation','Librarians FTE staff',
+               'Total library FTE staff',
+               'Total salaries and wages from the library budget']].copy()
 # Select only universities that have a number of librarians above average
 # because a lot of small universities only have a handful of librarians 
 # these are not valuable as our reference
