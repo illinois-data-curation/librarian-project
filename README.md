@@ -24,7 +24,7 @@ Two visualizations are created:
 # Data profile 
 - `AcademicLibrary.csv` contains institutional information (including UnitID, name, address) and academic libraries information (including staffing and expenditures). The variables used in this project are university name, state, number of librarians and library staff, salary expenditure. IPEDS data is is generally available for public use without any specific license restrictions.
 - `table.xlsx` summarizes personal consumption expenditures in the United States for 2023, with key columns including: GeoFips, a geographic identifier; GeoName, the corresponding region name; LineCode, numerical codes representing expenditure categories; Description, textual descriptions of categories; and 2023, expenditure values in millions of dollars. Data from BEA is also generally available for public use without any specific license restrictions.
-- `us-state-names.tsv` downloable from https://raw.githubusercontent.com/GovLab/opencorporatesd3/refs/heads/master/us-state-names.tsv. This dataset likely falls within the public domain, as it contains only U.S. state names and their corresponding codes, which are factual and not copyrightable.
+- `us-state-names.tsv` is downloable from https://raw.githubusercontent.com/GovLab/opencorporatesd3/refs/heads/master/us-state-names.tsv. This dataset likely falls within the public domain, as it contains only U.S. state names and their corresponding codes, which are factual and not copyrightable.
 
 # Findings
 - Although California, Texas, Florida, and New York offer a large number of library staff positions, their high cost of living compared to salaries may reduce their overall appeal.
@@ -39,7 +39,6 @@ While Personal Consumption Expenditures (PCE) offer a broad overview of spending
 Future work can also compare compare librarian salaries with other professions all to evaluate how well-compensated the job of a librarian is. One data could be untilized is Occupational Employment and Wage Statistics (OWES) Tables: https://www.bls.gov/oes/tables.htm from Bureau of Labor Statistics. I planned to use this data in the original Project Plan. However, due to the time limit, this has to be done in future work.
 
 # Reproducing 
-Sequence of steps required for someone else to reproduce your results.
 ## Step 1: Download the IPEDs and PCE datasets
 Both datasets are not accessible through API and cannot be easily downloaded via wget. Here I desbribe the steps to download the files.
 ### IPEDs Data Acquisition
@@ -85,9 +84,9 @@ U.S. Bureau of Economic Analysis, "SAPCE1 Personal consumption expenditures (PCE
 
 - State code data
 
-The data used is sourced from [GovLab's GitHub repository](https://github.com/GovLab) at the following link: [us-state-names.tsv](https://raw.githubusercontent.com/GovLab/opencorporatesd3/refs/heads/master/us-state-names.tsv). GovLab also maintains a website at [thegovlab.org](https://thegovlab.org).<br>
+    The data used is sourced from [GovLab's GitHub repository](https://github.com/GovLab) at the following link: [us-state-names.tsv](https://raw.githubusercontent.com/GovLab/opencorporatesd3/refs/heads/master/us-state-names.tsv). GovLab also maintains a website at [thegovlab.org](https://thegovlab.org).<br>
 
-A more authoritative source for such data could be the U.S. Bureau of Labor Statistics (BLS) resource: [USPS State Abbreviations and FIPS Codes](https://www.bls.gov/respondents/mwr/electronic-data-interchange/appendix-d-usps-state-abbreviations-and-fips-codes.htm). However, for convenience and formatting, the GitHub-hosted data was chosen for this purpose.
+    A more authoritative source for such data could be the U.S. Bureau of Labor Statistics (BLS) resource: [USPS State Abbreviations and FIPS Codes](https://www.bls.gov/respondents/mwr/electronic-data-interchange/appendix-d-usps-state-abbreviations-and-fips-codes.htm). However, for convenience and formatting, the GitHub-hosted data was chosen for this purpose.
 
 - Software: Altair
 VanderPlas et al., (2018). Altair: Interactive Statistical Visualizations for Python. Journal of Open Source Software, 3(32), 1057, https://doi.org/10.21105/joss.01057

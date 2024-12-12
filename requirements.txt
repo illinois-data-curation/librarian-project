@@ -1,0 +1,10 @@
+matplotlib
+numpy
+pandas
+pyarrow
+requests
+altair
+vega_datasets
+openpyxl
+snakemake
+scikit-learn
