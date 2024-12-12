@@ -45,8 +45,22 @@ Sequence of steps required for someone else to reproduce your results.
 1. Download the IPEDs and PCE datasets
 Both datasets are not accessible through API and cannot be easily downloaded via wget. Here I desbribe the steps to download the files.
 - IPEDs
-1. Go to URL: https://nces.ed.gov/ipeds/datacenter/SelectVariables.aspx?stepId=1&sid=1f7ec561-a803-4ea6-8163-3761c55f451f&rtid=1
-![IPEDS Data Tool](screenshots/IPEDS1.png)
+1. Go to URL: https://nces.ed.gov/ipeds/datacenter/Default.aspx?gotoReportId=5&fromIpeds=true 
+2. Select Institutions 
+    1. By Groups - EZ Groups
+    ![IPEDS Data Tool](screenshots/IPEDS1.png)
+    2. Change Data Collection year to 2022 (because the most data for academic libraries are in 2022) and select U.S. only institutions. Click Search and Continute to select variables.
+    ![IPEDS Data Tool](screenshots/IPEDS2.png)
+4. Select Variables
+    1. Select year 2022. Under Institutional Characteristics -- Directory information, institution classifications, and response status information -- Directory information and response status, check Institution (entity) nameInfo, Institution name aliasInfo, Street address or post office boxInfo, City location of institutionInfo, State abbreviationInfo, ZIP codeInfo, as showned in the screenshot. Though most of variables will not be used in this project, they could be useful in future work.
+    ![IPEDS Data Tool](screenshots/IPEDS3.png)
+    2. Under Academic Libraries -- Academic Libraries: Fiscal year 2022 -- Expenditures, check Total salaries and wages from the library budget, as shown in the screenshot.
+    ![IPEDS Data Tool](screenshots/IPEDS4.png)
+    3. Under Academic Libraries -- Academic Libraries: Fiscal year 2022 -- Number of full-time equivalent (FTEs) library staff, Select All, as shown in the screenshot.
+    ![IPEDS Data Tool](screenshots/IPEDS5.png)
+5. Continue to Output and download Academic Libraries/Academic Libraries: Fiscal year 2022 as csv
+    ![IPEDS Data Tool](screenshots/IPEDS6.png)
+
 2. Go to Snakefile code 
 
 # References
