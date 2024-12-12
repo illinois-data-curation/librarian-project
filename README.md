@@ -8,7 +8,7 @@ CodeOcean
 - Wanheng Li: 0009-0002-4039-6567
 
 # Summary
-As an LIS student interested in working in an academic library, I want to find out which institutions hire the most librarians and which states offer the best income-to-cost-of-living ratio for librarians. This project aims to serve as a reference for fellow library science students pursuing academic library careers. It examines the staffing levels of academic institutions and states, evaluates average library staff salaries in each state, and compares these earnings to regional living costs.
+As an LIS student interested in working in an academic library, I want to find out which institutions hire the most librarians and which states offer the best income-to-cost-of-living ratio for librarians. This project aims to serve as a reference for fellow library science students pursuing academic library careers. It examines the staffing levels of academic institutions and states, evaluates average library staff salaries in each state, and compares these earnings to regional living costs.<br>
 
 Four tables are created:
 - A ranked list of the top 50 universities offering the highest number of library positions
@@ -22,11 +22,9 @@ Two visualizations are created:
 - The second visualization is a scatter plot comparing average library staff salaries to each state’s living costs. Hovering over the data points reveals the state names. This plot helps users quickly identify states offering higher average salaries combined with lower living expenses.
 
 # Data profile 
-[500-1000 words] Description of each dataset used including license/terms of use.
-- `AcademicLibrary_11-12-2024.csv` is 
-- `PCE.csv` is a dataset that 
-- `us-state-names.tsv` is
-
+- `AcademicLibrary.csv` contains institutional information (including UnitID, name, address) and academic libraries information (including staffing and expenditures). The variables used in this project are university name, state, number of librarians and library staff, salary expenditure. IPEDS data is is generally available for public use without any specific license restrictions.
+- `table.xlsx` summarizes personal consumption expenditures in the United States for 2023, with key columns including: GeoFips, a geographic identifier; GeoName, the corresponding region name; LineCode, numerical codes representing expenditure categories; Description, textual descriptions of categories; and 2023, expenditure values in millions of dollars. Data from BEA is also generally available for public use without any specific license restrictions.
+- `us-state-names.tsv` downloable from https://raw.githubusercontent.com/GovLab/opencorporatesd3/refs/heads/master/us-state-names.tsv. This dataset likely falls within the public domain, as it contains only U.S. state names and their corresponding codes, which are factual and not copyrightable.
 
 # Findings
 - Although California, Texas, Florida, and New York offer a large number of library staff positions, their high cost of living compared to salaries may reduce their overall appeal.
@@ -75,11 +73,21 @@ Check `environment.md` to make sure you have the correct environment.
 ```
 snakemake --cores 1
 ```
-Run this code in the terminal to automate the reproduction.
+Run this code in the terminal to automate the reproduction process.
 
 # References
-Formatted citations for any papers, datasets, or software used in your project.
+- IPEDS
+U.S. Department of Education, National Center for Education Statistics, Integrated Postsecondary
+Education Data System (IPEDS), 2022, Institutional Characteristics (IC) and Academic Libraries (AL). Retrieved from https://nces.ed.gov/ipeds/datacenter/Default.aspx?gotoReportId=5&fromIpeds=true on November 14, 2024.
 
+- PCE
+U.S. Bureau of Economic Analysis, "SAPCE1 Personal consumption expenditures (PCE) by major type of product 1" (accessed Wednesday, December 11, 2024).
 
-wiki 
+- State code data
 
+The data used is sourced from [GovLab's GitHub repository](https://github.com/GovLab) at the following link: [us-state-names.tsv](https://raw.githubusercontent.com/GovLab/opencorporatesd3/refs/heads/master/us-state-names.tsv). GovLab also maintains a website at [thegovlab.org](https://thegovlab.org).<br>
+
+A more authoritative source for such data could be the U.S. Bureau of Labor Statistics (BLS) resource: [USPS State Abbreviations and FIPS Codes](https://www.bls.gov/respondents/mwr/electronic-data-interchange/appendix-d-usps-state-abbreviations-and-fips-codes.htm). However, for convenience and formatting, the GitHub-hosted data was chosen for this purpose.
+
+- Software: Altair
+VanderPlas et al., (2018). Altair: Interactive Statistical Visualizations for Python. Journal of Open Source Software, 3(32), 1057, https://doi.org/10.21105/joss.01057
