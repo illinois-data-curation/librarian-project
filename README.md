@@ -42,14 +42,14 @@ Future work can also compare compare librarian salaries with other professions a
 
 # Reproducing 
 Sequence of steps required for someone else to reproduce your results.
-1. Download the IPEDs and PCE datasets
+## Step 1: Download the IPEDs and PCE datasets
 Both datasets are not accessible through API and cannot be easily downloaded via wget. Here I desbribe the steps to download the files.
-- IPEDs
+### IPEDs Data Acquisition
 1. Go to URL: https://nces.ed.gov/ipeds/datacenter/Default.aspx?gotoReportId=5&fromIpeds=true 
 2. Select Institutions 
     1. By Groups - EZ Groups
     ![IPEDS Data Tool](screenshots/IPEDS1.png)
-    2. Change Data Collection year to 2022 (because the most data for academic libraries are in 2022) and select U.S. only institutions. Click Search and Continute to select variables.
+    2. Change Data Collection year to 2022 (because the most recent data for academic libraries are in 2022) and select U.S. only institutions. Click Search and Continute to select variables.
     ![IPEDS Data Tool](screenshots/IPEDS2.png)
 4. Select Variables
     1. Select year 2022. Under Institutional Characteristics -- Directory information, institution classifications, and response status information -- Directory information and response status, check Institution (entity) nameInfo, Institution name aliasInfo, Street address or post office boxInfo, City location of institutionInfo, State abbreviationInfo, ZIP codeInfo, as showned in the screenshot. Though most of variables will not be used in this project, they could be useful in future work.
@@ -58,10 +58,24 @@ Both datasets are not accessible through API and cannot be easily downloaded via
     ![IPEDS Data Tool](screenshots/IPEDS4.png)
     3. Under Academic Libraries -- Academic Libraries: Fiscal year 2022 -- Number of full-time equivalent (FTEs) library staff, Select All, as shown in the screenshot.
     ![IPEDS Data Tool](screenshots/IPEDS5.png)
-5. Continue to Output and download Academic Libraries/Academic Libraries: Fiscal year 2022 as csv
-    ![IPEDS Data Tool](screenshots/IPEDS6.png)
+5. Continue to Output and download Academic Libraries/Academic Libraries: Fiscal year 2022 as csv. Change the file name to “AcademicLibrary.csv”
+    ![IPEDS Data Tool](screenshots/IPEDS6.png) 
+6. *NOTE*: The data tool might change how it organizes its output data. You might not be able to download the exact same data. For reproductibility, a copy of data used in this project is uploaded to Box. 
 
-2. Go to Snakefile code 
+### PCE Data Acquisition
+1. Go to URL: https://apps.bea.gov/itable/?ReqID=70&step=1&_gl=1*w7g723*_ga*Mjc2MjE5MzMuMTczMDQxNDQ4Ng..*_ga_J4698JNNFT*MTczMDQxNzY5OS4yLjAuMTczMDQxNzY5OS42MC4wLjA.#eyJhcHBpZCI6NzAsInN0ZXBzIjpbMSwyOSwyNSwzMSwyNl0sImRhdGEiOltbIlRhYmxlSWQiLCI1MjQiXSxbIk1ham9yX0FyZWEiLCIwIl0sWyJTdGF0ZSIsWyIwIl1dXX0=
+2. Select All Areas and All statistics in the table. Click Next Step.
+![PCE Data Tool](screenshots/PCE1.png)
+3. Select Year 2023. Click Next Step.
+![PCE Data Tool](screenshots/PCE2.png)
+3. Download as XLSX (the format used in this project). The file name should be "Table.xlsx"
+
+## Step 2: Use Snakefile to reproduce the results
+Check `environment.md` to make sure you have the correct environment.
+```
+snakemake --cores 1
+```
+Run this code in the terminal to automate the reproduction.
 
 # References
 Formatted citations for any papers, datasets, or software used in your project.
