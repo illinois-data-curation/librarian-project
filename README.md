@@ -2,7 +2,7 @@
 Where to Shelf Your Career: Comparing Academic Library Staffing and Costs of Living
 
 # Link to archival record
-DOI: 10.5281/zenodo.14405594
+DOI: [10.5281/zenodo.14405594](https://doi.org/10.5281/zenodo.14406868)
 
 # Contributors
 - Wanheng Li: 0009-0002-4039-6567
